@@ -1,0 +1,4 @@
+modele,cv_roc_auc,test_roc_auc,test_pr_auc,test_brier,test_prevalence,rappel@0.5,f1@0.5,seuil_f1,rappel@seuil_f1,f1@seuil_f1
+Random Forest (baseline),0.7825,0.7827,0.3482,0.1323,0.1529,0.4466,0.416,0.37,0.641,0.4386
+Régression logistique,0.8067,0.8106,0.4121,0.1847,0.1529,0.7601,0.4487,0.5765,0.6695,0.4621
+LightGBM,0.8157,0.8197,0.4465,0.1047,0.1529,0.1734,0.2685,0.2272,0.6424,0.4747

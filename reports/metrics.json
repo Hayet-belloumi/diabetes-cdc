@@ -1,0 +1,61 @@
+{
+  "modele": "LightGBM",
+  "test": {
+    "roc_auc": 0.8197094462825396,
+    "pr_auc": 0.44646036825289687,
+    "brier": 0.1046713623054634,
+    "prevalence": 0.15293604967861424
+  },
+  "seuil_defaut_0.5": {
+    "seuil": 0.5,
+    "precision": 0.5951100244498777,
+    "rappel": 0.17338652229662346,
+    "specificite": 0.9787015125012861,
+    "f1": 0.26853486319505737,
+    "confusion": {
+      "tn": 38048,
+      "fp": 828,
+      "fn": 5802,
+      "tp": 1217
+    }
+  },
+  "seuil_f1_max": {
+    "seuil": 0.2272,
+    "precision": 0.37640871525169045,
+    "rappel": 0.6423992021655507,
+    "specificite": 0.8078506019137771,
+    "f1": 0.4746815454258343,
+    "confusion": {
+      "tn": 31406,
+      "fp": 7470,
+      "fn": 2510,
+      "tp": 4509
+    }
+  },
+  "depistage_rappel_80": {
+    "seuil": 0.1421,
+    "precision": 0.3102490056121615,
+    "rappel": 0.8112266704658784,
+    "specificite": 0.6743749356929726,
+    "f1": 0.4488412423143623,
+    "confusion": {
+      "tn": 26217,
+      "fp": 12659,
+      "fn": 1325,
+      "tp": 5694
+    }
+  },
+  "note": "Seuils choisis par validation croisée 5 plis sur le train (out-of-fold), jamais sur le test.",
+  "top_variables_shap": {
+    "GenHlth": 0.5695,
+    "HighBP": 0.4693,
+    "Age": 0.4253,
+    "BMI": 0.3966,
+    "HighChol": 0.2902,
+    "Sex": 0.1266,
+    "Income": 0.1149,
+    "MentHlth": 0.1074,
+    "CholCheck": 0.1063,
+    "HvyAlcoholConsump": 0.0772
+  }
+}
